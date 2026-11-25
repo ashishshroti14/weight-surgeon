@@ -1,0 +1,52 @@
+[
+  {
+    "model_id": "Qwen/Qwen3.5-4B",
+    "elapsed_sec": 441.7,
+    "cost_usd": 0.2663,
+    "metrics": {
+      "gsm8k": {
+        "n": 60,
+        "accuracy": 58.33,
+        "correct": 35,
+        "truncation_pct": 55.0,
+        "loop_pct": 21.67,
+        "closed_think_pct": 46.67,
+        "avg_tokens": 2950.0
+      },
+      "math": {
+        "n": 60,
+        "accuracy": 58.33,
+        "correct": 35,
+        "truncation_pct": 65.0,
+        "loop_pct": 6.67,
+        "closed_think_pct": 38.33,
+        "avg_tokens": 3466.4
+      }
+    }
+  },
+  {
+    "model_id": "Qwen/Qwen3.5-9B",
+    "elapsed_sec": 562.0,
+    "cost_usd": 0.3388,
+    "metrics": {
+      "gsm8k": {
+        "n": 60,
+        "accuracy": 71.67,
+        "correct": 43,
+        "truncation_pct": 38.33,
+        "loop_pct": 8.33,
+        "closed_think_pct": 61.67,
+        "avg_tokens": 2535.4
+      },
+      "math": {
+        "n": 60,
+        "accuracy": 48.33,
+        "correct": 29,
+        "truncation_pct": 68.33,
+        "loop_pct": 10.0,
+        "closed_think_pct": 35.0,
+        "avg_tokens": 3419.1
+      }
+    }
+  }
+]

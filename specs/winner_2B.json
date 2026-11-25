@@ -1,0 +1,11 @@
+{
+  "name": "L15_19_st64_a15_tw05",
+  "layers": [15, 19],
+  "mode": "col_steer_think",
+  "top_k": 64,
+  "rank": 1,
+  "alpha": 1.5,
+  "think_weight": 0.5,
+  "rank_by": "z_diff",
+  "vec_source": "resid_loop_dir"
+}

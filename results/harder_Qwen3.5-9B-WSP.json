@@ -1,0 +1,147 @@
+{
+  "base_model": "Qwen/Qwen3.5-9B",
+  "wsp_model": "ashishshroti14/Qwen3.5-9B-WSP",
+  "base": {
+    "tag": "base",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "elapsed_sec": 1175.8,
+    "est_cost_usd": 1.362,
+    "metrics": {
+      "math500_qwen_sampling_8k": {
+        "n": 500,
+        "accuracy": 67.2,
+        "correct": 336,
+        "truncation_pct": 29.4,
+        "loop_pct": 2.2,
+        "closed_think_pct": 74.0,
+        "avg_tokens": 5143.7
+      },
+      "aime24_25_greedy_8k": {
+        "n": 60,
+        "accuracy": 8.33,
+        "correct": 5,
+        "truncation_pct": 93.33,
+        "loop_pct": 11.67,
+        "closed_think_pct": 8.33,
+        "avg_tokens": 8061.1
+      },
+      "aime24_25_qwen_sampling_8k": {
+        "n": 60,
+        "accuracy": 8.33,
+        "correct": 5,
+        "truncation_pct": 91.67,
+        "loop_pct": 3.33,
+        "closed_think_pct": 11.67,
+        "avg_tokens": 8089.1
+      },
+      "gpqa_diamond_greedy_8k": {
+        "n": 198,
+        "accuracy": 45.45,
+        "correct": 90,
+        "truncation_pct": 87.88,
+        "loop_pct": 27.78,
+        "closed_think_pct": 13.64,
+        "avg_tokens": 7989.9
+      },
+      "mmlu_pro_nonthinking": {
+        "n": 420,
+        "accuracy": 32.38,
+        "correct": 136,
+        "truncation_pct": 73.1,
+        "loop_pct": 0.71,
+        "closed_think_pct": 0.0,
+        "avg_tokens": 476.9
+      },
+      "mmlu_pro_thinking_greedy_4k": {
+        "n": 420,
+        "accuracy": 62.14,
+        "correct": 261,
+        "truncation_pct": 81.67,
+        "loop_pct": 9.05,
+        "closed_think_pct": 21.43,
+        "avg_tokens": 3701.9
+      },
+      "humaneval_greedy_4k": {
+        "n": 164,
+        "pass_at_1": 90.85,
+        "passed": 149,
+        "truncation_pct": 3.66,
+        "loop_pct": 7.93,
+        "closed_think_pct": 96.95,
+        "avg_tokens": 949.3
+      }
+    }
+  },
+  "patched": {
+    "tag": "patched",
+    "model_id": "ashishshroti14/Qwen3.5-9B-WSP",
+    "elapsed_sec": 832.2,
+    "est_cost_usd": 0.964,
+    "metrics": {
+      "math500_qwen_sampling_8k": {
+        "n": 500,
+        "accuracy": 81.6,
+        "correct": 408,
+        "truncation_pct": 8.8,
+        "loop_pct": 5.6,
+        "closed_think_pct": 99.2,
+        "avg_tokens": 2936.3
+      },
+      "aime24_25_greedy_8k": {
+        "n": 60,
+        "accuracy": 31.67,
+        "correct": 19,
+        "truncation_pct": 68.33,
+        "loop_pct": 21.67,
+        "closed_think_pct": 90.0,
+        "avg_tokens": 7068.1
+      },
+      "aime24_25_qwen_sampling_8k": {
+        "n": 60,
+        "accuracy": 38.33,
+        "correct": 23,
+        "truncation_pct": 51.67,
+        "loop_pct": 11.67,
+        "closed_think_pct": 100.0,
+        "avg_tokens": 6393.0
+      },
+      "gpqa_diamond_greedy_8k": {
+        "n": 198,
+        "accuracy": 49.49,
+        "correct": 98,
+        "truncation_pct": 53.54,
+        "loop_pct": 27.78,
+        "closed_think_pct": 89.39,
+        "avg_tokens": 6025.0
+      },
+      "mmlu_pro_nonthinking": {
+        "n": 420,
+        "accuracy": 33.81,
+        "correct": 142,
+        "truncation_pct": 72.86,
+        "loop_pct": 0.24,
+        "closed_think_pct": 3.57,
+        "avg_tokens": 475.9
+      },
+      "mmlu_pro_thinking_greedy_4k": {
+        "n": 420,
+        "accuracy": 67.62,
+        "correct": 284,
+        "truncation_pct": 27.38,
+        "loop_pct": 11.43,
+        "closed_think_pct": 93.57,
+        "avg_tokens": 2422.9
+      },
+      "humaneval_greedy_4k": {
+        "n": 164,
+        "pass_at_1": 87.2,
+        "passed": 143,
+        "truncation_pct": 6.71,
+        "loop_pct": 11.59,
+        "closed_think_pct": 99.39,
+        "avg_tokens": 939.3
+      }
+    }
+  },
+  "total_est_cost_usd": 2.326
+}

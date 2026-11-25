@@ -1,0 +1,134 @@
+{
+  "model_id": "Qwen/Qwen3.5-0.8B",
+  "release_slug": "Qwen3.5-0.8B-WSP",
+  "patch_info": {
+    "patch_spec": {
+      "name": "L15_19_s64_a060_tw12",
+      "layers": [
+        15,
+        19
+      ],
+      "mode": "col_steer_signed",
+      "top_k": 64,
+      "rank": 1,
+      "alpha": 0.6,
+      "think_weight": 1.2,
+      "rank_by": "z_excess",
+      "vec_source": "resid_loop_dir"
+    },
+    "total_params": 852985920,
+    "modified_params": 131072,
+    "pct_modified": 0.015366,
+    "layer_stats": {
+      "15": {
+        "tensor_key": "model.language_model.layers.15.mlp.down_proj.weight",
+        "modified_elems": 65536,
+        "selected_cols": [
+          0,
+          56,
+          371,
+          53,
+          264,
+          46,
+          135,
+          25,
+          44,
+          504,
+          63,
+          1184,
+          84,
+          108,
+          81,
+          263
+        ],
+        "num_selected_cols": 64,
+        "delta_l2": 1.16507,
+        "rel_delta": 0.070852
+      },
+      "19": {
+        "tensor_key": "model.language_model.layers.19.mlp.down_proj.weight",
+        "modified_elems": 65536,
+        "selected_cols": [
+          11,
+          1,
+          171,
+          3,
+          34,
+          268,
+          119,
+          63,
+          66,
+          343,
+          72,
+          98,
+          614,
+          220,
+          426,
+          122
+        ],
+        "num_selected_cols": 64,
+        "delta_l2": 1.194978,
+        "rel_delta": 0.069249
+      }
+    }
+  },
+  "max_tokens": 4096,
+  "base": {
+    "gsm8k": {
+      "n": 1319,
+      "accuracy": 12.36,
+      "correct": 163,
+      "truncation_pct": 99.77,
+      "loop_pct": 98.64,
+      "closed_think_pct": 0.23,
+      "avg_tokens": 4089.1
+    },
+    "math": {
+      "n": 500,
+      "accuracy": 6.2,
+      "correct": 31,
+      "truncation_pct": 99.4,
+      "loop_pct": 93.6,
+      "closed_think_pct": 0.6,
+      "avg_tokens": 4079.3
+    },
+    "ifeval": {
+      "n": 541,
+      "prompt_strict_acc": 12.2,
+      "inst_strict_acc": 23.26,
+      "truncation_pct": 99.45,
+      "loop_pct": 96.12,
+      "avg_tokens": 4075.6
+    }
+  },
+  "patched": {
+    "gsm8k": {
+      "n": 1319,
+      "accuracy": 53.68,
+      "correct": 708,
+      "truncation_pct": 30.33,
+      "loop_pct": 54.13,
+      "closed_think_pct": 99.09,
+      "avg_tokens": 2981.7
+    },
+    "math": {
+      "n": 500,
+      "accuracy": 28.0,
+      "correct": 140,
+      "truncation_pct": 67.4,
+      "loop_pct": 64.8,
+      "closed_think_pct": 92.4,
+      "avg_tokens": 3678.4
+    },
+    "ifeval": {
+      "n": 541,
+      "prompt_strict_acc": 42.14,
+      "inst_strict_acc": 48.2,
+      "truncation_pct": 32.9,
+      "loop_pct": 87.06,
+      "avg_tokens": 2228.6
+    }
+  },
+  "elapsed_sec": 2147.8,
+  "cost_usd": 1.2947
+}

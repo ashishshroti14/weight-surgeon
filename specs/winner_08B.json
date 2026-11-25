@@ -1,0 +1,11 @@
+{
+  "name": "L15_19_s64_a060_tw12",
+  "layers": [15, 19],
+  "mode": "col_steer_signed",
+  "top_k": 64,
+  "rank": 1,
+  "alpha": 0.60,
+  "think_weight": 1.2,
+  "rank_by": "z_excess",
+  "vec_source": "resid_loop_dir"
+}

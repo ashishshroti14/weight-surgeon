@@ -1,0 +1,11 @@
+{
+  "name": "L23_26_27_st64_a15_tw10",
+  "layers": [23, 26, 27],
+  "mode": "col_steer_think",
+  "top_k": 64,
+  "rank": 1,
+  "alpha": 1.5,
+  "think_weight": 1.0,
+  "rank_by": "z_diff",
+  "vec_source": "resid_loop_dir"
+}

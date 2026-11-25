@@ -1,0 +1,784 @@
+{
+  "config": {
+    "sizes": [
+      "0.8B",
+      "4B"
+    ],
+    "quants": [
+      "bf16",
+      "fp8",
+      "bnb_4bit",
+      "w4a16_rtn"
+    ],
+    "n_gsm8k": 300,
+    "n_math": 200,
+    "max_tokens": 4096,
+    "seed": 42,
+    "max_budget_usd": 12.0,
+    "ephemeral_only": true,
+    "modal_profile": "ticagentd"
+  },
+  "run_est_cost_usd": 5.6599,
+  "cumulative_ledger_usd": 9.9552,
+  "aborted_reason": null,
+  "retention_summary": {
+    "0.8B": {
+      "bf16": {
+        "gsm8k": {
+          "base_acc": 13.67,
+          "wsp_acc": 56.33,
+          "acc_lift_pts": 42.66,
+          "lift_retention_vs_bf16_pct": 100.0,
+          "base_trunc_pct": 99.67,
+          "wsp_trunc_pct": 27.67,
+          "trunc_delta_pts": -72.0,
+          "base_closed_think_pct": 0.33,
+          "wsp_closed_think_pct": 98.33,
+          "closed_think_delta_pts": 98.0,
+          "base_avg_tokens": 4085.6,
+          "wsp_avg_tokens": 2866.1
+        },
+        "math500": {
+          "base_acc": 10.0,
+          "wsp_acc": 32.5,
+          "acc_lift_pts": 22.5,
+          "lift_retention_vs_bf16_pct": 100.0,
+          "base_trunc_pct": 98.0,
+          "wsp_trunc_pct": 61.5,
+          "trunc_delta_pts": -36.5,
+          "base_closed_think_pct": 2.0,
+          "wsp_closed_think_pct": 92.5,
+          "closed_think_delta_pts": 90.5,
+          "base_avg_tokens": 4039.2,
+          "wsp_avg_tokens": 3561.2
+        }
+      },
+      "fp8": {
+        "gsm8k": {
+          "base_acc": 15.67,
+          "wsp_acc": 50.33,
+          "acc_lift_pts": 34.66,
+          "lift_retention_vs_bf16_pct": 81.2,
+          "base_trunc_pct": 98.67,
+          "wsp_trunc_pct": 34.67,
+          "trunc_delta_pts": -64.0,
+          "base_closed_think_pct": 1.33,
+          "wsp_closed_think_pct": 97.33,
+          "closed_think_delta_pts": 96.0,
+          "base_avg_tokens": 4056.7,
+          "wsp_avg_tokens": 3062.5
+        },
+        "math500": {
+          "base_acc": 9.0,
+          "wsp_acc": 31.0,
+          "acc_lift_pts": 22.0,
+          "lift_retention_vs_bf16_pct": 97.8,
+          "base_trunc_pct": 100.0,
+          "wsp_trunc_pct": 63.5,
+          "trunc_delta_pts": -36.5,
+          "base_closed_think_pct": 0.0,
+          "wsp_closed_think_pct": 93.0,
+          "closed_think_delta_pts": 93.0,
+          "base_avg_tokens": 4096.0,
+          "wsp_avg_tokens": 3562.7
+        }
+      },
+      "bnb_4bit": {
+        "gsm8k": {
+          "base_acc": 13.67,
+          "wsp_acc": 39.0,
+          "acc_lift_pts": 25.33,
+          "lift_retention_vs_bf16_pct": 59.4,
+          "base_trunc_pct": 100.0,
+          "wsp_trunc_pct": 46.0,
+          "trunc_delta_pts": -54.0,
+          "base_closed_think_pct": 0.0,
+          "wsp_closed_think_pct": 100.0,
+          "closed_think_delta_pts": 100.0,
+          "base_avg_tokens": 4096.0,
+          "wsp_avg_tokens": 3128.6
+        },
+        "math500": {
+          "base_acc": 4.0,
+          "wsp_acc": 27.0,
+          "acc_lift_pts": 23.0,
+          "lift_retention_vs_bf16_pct": 102.2,
+          "base_trunc_pct": 100.0,
+          "wsp_trunc_pct": 70.0,
+          "trunc_delta_pts": -30.0,
+          "base_closed_think_pct": 0.0,
+          "wsp_closed_think_pct": 99.5,
+          "closed_think_delta_pts": 99.5,
+          "base_avg_tokens": 4096.0,
+          "wsp_avg_tokens": 3579.0
+        }
+      },
+      "w4a16_rtn": {
+        "gsm8k": {
+          "base_acc": 4.67,
+          "wsp_acc": 32.67,
+          "acc_lift_pts": 28.0,
+          "lift_retention_vs_bf16_pct": 65.6,
+          "base_trunc_pct": 100.0,
+          "wsp_trunc_pct": 48.0,
+          "trunc_delta_pts": -52.0,
+          "base_closed_think_pct": 0.0,
+          "wsp_closed_think_pct": 99.67,
+          "closed_think_delta_pts": 99.67,
+          "base_avg_tokens": 4096.0,
+          "wsp_avg_tokens": 2604.8
+        },
+        "math500": {
+          "base_acc": 5.0,
+          "wsp_acc": 18.5,
+          "acc_lift_pts": 13.5,
+          "lift_retention_vs_bf16_pct": 60.0,
+          "base_trunc_pct": 98.5,
+          "wsp_trunc_pct": 76.0,
+          "trunc_delta_pts": -22.5,
+          "base_closed_think_pct": 1.5,
+          "wsp_closed_think_pct": 99.5,
+          "closed_think_delta_pts": 98.0,
+          "base_avg_tokens": 4044.2,
+          "wsp_avg_tokens": 3408.3
+        }
+      }
+    },
+    "4B": {
+      "bf16": {
+        "gsm8k": {
+          "base_acc": 63.33,
+          "wsp_acc": 74.0,
+          "acc_lift_pts": 10.67,
+          "lift_retention_vs_bf16_pct": 100.0,
+          "base_trunc_pct": 47.33,
+          "wsp_trunc_pct": 14.33,
+          "trunc_delta_pts": -33.0,
+          "base_closed_think_pct": 53.0,
+          "wsp_closed_think_pct": 98.67,
+          "closed_think_delta_pts": 45.67,
+          "base_avg_tokens": 2725.9,
+          "wsp_avg_tokens": 1137.4
+        },
+        "math500": {
+          "base_acc": 43.0,
+          "wsp_acc": 64.5,
+          "acc_lift_pts": 21.5,
+          "lift_retention_vs_bf16_pct": 100.0,
+          "base_trunc_pct": 77.0,
+          "wsp_trunc_pct": 29.5,
+          "trunc_delta_pts": -47.5,
+          "base_closed_think_pct": 24.0,
+          "wsp_closed_think_pct": 91.0,
+          "closed_think_delta_pts": 67.0,
+          "base_avg_tokens": 3600.0,
+          "wsp_avg_tokens": 2314.2
+        }
+      },
+      "fp8": {
+        "gsm8k": {
+          "base_acc": 66.0,
+          "wsp_acc": 70.33,
+          "acc_lift_pts": 4.33,
+          "lift_retention_vs_bf16_pct": 40.6,
+          "base_trunc_pct": 48.0,
+          "wsp_trunc_pct": 16.33,
+          "trunc_delta_pts": -31.67,
+          "base_closed_think_pct": 52.0,
+          "wsp_closed_think_pct": 99.33,
+          "closed_think_delta_pts": 47.33,
+          "base_avg_tokens": 2745.2,
+          "wsp_avg_tokens": 1201.4
+        },
+        "math500": {
+          "base_acc": 44.5,
+          "wsp_acc": 64.0,
+          "acc_lift_pts": 19.5,
+          "lift_retention_vs_bf16_pct": 90.7,
+          "base_trunc_pct": 72.0,
+          "wsp_trunc_pct": 29.0,
+          "trunc_delta_pts": -43.0,
+          "base_closed_think_pct": 29.5,
+          "wsp_closed_think_pct": 87.5,
+          "closed_think_delta_pts": 58.0,
+          "base_avg_tokens": 3543.2,
+          "wsp_avg_tokens": 2358.0
+        }
+      },
+      "bnb_4bit": {
+        "gsm8k": {
+          "base_acc": 66.0,
+          "wsp_acc": 65.67,
+          "acc_lift_pts": -0.33,
+          "lift_retention_vs_bf16_pct": -3.1,
+          "base_trunc_pct": 49.67,
+          "wsp_trunc_pct": 27.67,
+          "trunc_delta_pts": -22.0,
+          "base_closed_think_pct": 51.0,
+          "wsp_closed_think_pct": 98.67,
+          "closed_think_delta_pts": 47.67,
+          "base_avg_tokens": 2787.1,
+          "wsp_avg_tokens": 1588.0
+        },
+        "math500": {
+          "base_acc": 39.5,
+          "wsp_acc": 58.5,
+          "acc_lift_pts": 19.0,
+          "lift_retention_vs_bf16_pct": 88.4,
+          "base_trunc_pct": 74.5,
+          "wsp_trunc_pct": 43.0,
+          "trunc_delta_pts": -31.5,
+          "base_closed_think_pct": 26.5,
+          "wsp_closed_think_pct": 86.5,
+          "closed_think_delta_pts": 60.0,
+          "base_avg_tokens": 3559.1,
+          "wsp_avg_tokens": 2598.5
+        }
+      },
+      "w4a16_rtn": {
+        "gsm8k": {
+          "base_acc": 63.0,
+          "wsp_acc": 50.33,
+          "acc_lift_pts": -12.67,
+          "lift_retention_vs_bf16_pct": -118.7,
+          "base_trunc_pct": 48.67,
+          "wsp_trunc_pct": 50.0,
+          "trunc_delta_pts": 1.33,
+          "base_closed_think_pct": 52.67,
+          "wsp_closed_think_pct": 98.0,
+          "closed_think_delta_pts": 45.33,
+          "base_avg_tokens": 2681.7,
+          "wsp_avg_tokens": 2318.3
+        },
+        "math500": {
+          "base_acc": 34.0,
+          "wsp_acc": 46.0,
+          "acc_lift_pts": 12.0,
+          "lift_retention_vs_bf16_pct": 55.8,
+          "base_trunc_pct": 78.0,
+          "wsp_trunc_pct": 58.5,
+          "trunc_delta_pts": -19.5,
+          "base_closed_think_pct": 23.0,
+          "wsp_closed_think_pct": 85.5,
+          "closed_think_delta_pts": 62.5,
+          "base_avg_tokens": 3619.6,
+          "wsp_avg_tokens": 3050.7
+        }
+      }
+    }
+  },
+  "cells": [
+    {
+      "status": "ok",
+      "error": null,
+      "size": "0.8B",
+      "side": "base",
+      "quant": "bf16",
+      "model_id": "Qwen/Qwen3.5-0.8B",
+      "gpu": "L40S",
+      "max_tokens": 4096,
+      "elapsed_sec": 406.8,
+      "est_cost_usd": 0.2622,
+      "metrics": {
+        "gsm8k": {
+          "n": 300,
+          "accuracy": 13.67,
+          "correct": 41,
+          "truncation_pct": 99.67,
+          "loop_pct": 98.33,
+          "closed_think_pct": 0.33,
+          "avg_tokens": 4085.6
+        },
+        "math500": {
+          "n": 200,
+          "accuracy": 10.0,
+          "correct": 20,
+          "truncation_pct": 98.0,
+          "loop_pct": 93.0,
+          "closed_think_pct": 2.0,
+          "avg_tokens": 4039.2
+        }
+      }
+    },
+    {
+      "status": "ok",
+      "error": null,
+      "size": "0.8B",
+      "side": "wsp",
+      "quant": "bf16",
+      "model_id": "ashishshroti14/Qwen3.5-0.8B-WSP",
+      "gpu": "L40S",
+      "max_tokens": 4096,
+      "elapsed_sec": 353.1,
+      "est_cost_usd": 0.2275,
+      "metrics": {
+        "gsm8k": {
+          "n": 300,
+          "accuracy": 56.33,
+          "correct": 169,
+          "truncation_pct": 27.67,
+          "loop_pct": 56.0,
+          "closed_think_pct": 98.33,
+          "avg_tokens": 2866.1
+        },
+        "math500": {
+          "n": 200,
+          "accuracy": 32.5,
+          "correct": 65,
+          "truncation_pct": 61.5,
+          "loop_pct": 70.0,
+          "closed_think_pct": 92.5,
+          "avg_tokens": 3561.2
+        }
+      }
+    },
+    {
+      "status": "ok",
+      "error": null,
+      "size": "0.8B",
+      "side": "base",
+      "quant": "fp8",
+      "model_id": "Qwen/Qwen3.5-0.8B",
+      "gpu": "L40S",
+      "max_tokens": 4096,
+      "elapsed_sec": 342.1,
+      "est_cost_usd": 0.2205,
+      "metrics": {
+        "gsm8k": {
+          "n": 300,
+          "accuracy": 15.67,
+          "correct": 47,
+          "truncation_pct": 98.67,
+          "loop_pct": 98.0,
+          "closed_think_pct": 1.33,
+          "avg_tokens": 4056.7
+        },
+        "math500": {
+          "n": 200,
+          "accuracy": 9.0,
+          "correct": 18,
+          "truncation_pct": 100.0,
+          "loop_pct": 98.0,
+          "closed_think_pct": 0.0,
+          "avg_tokens": 4096.0
+        }
+      }
+    },
+    {
+      "status": "ok",
+      "error": null,
+      "size": "0.8B",
+      "side": "wsp",
+      "quant": "fp8",
+      "model_id": "ashishshroti14/Qwen3.5-0.8B-WSP",
+      "gpu": "L40S",
+      "max_tokens": 4096,
+      "elapsed_sec": 276.9,
+      "est_cost_usd": 0.1784,
+      "metrics": {
+        "gsm8k": {
+          "n": 300,
+          "accuracy": 50.33,
+          "correct": 151,
+          "truncation_pct": 34.67,
+          "loop_pct": 53.0,
+          "closed_think_pct": 97.33,
+          "avg_tokens": 3062.5
+        },
+        "math500": {
+          "n": 200,
+          "accuracy": 31.0,
+          "correct": 62,
+          "truncation_pct": 63.5,
+          "loop_pct": 66.0,
+          "closed_think_pct": 93.0,
+          "avg_tokens": 3562.7
+        }
+      }
+    },
+    {
+      "status": "ok",
+      "error": null,
+      "size": "0.8B",
+      "side": "base",
+      "quant": "bnb_4bit",
+      "model_id": "Qwen/Qwen3.5-0.8B",
+      "gpu": "L40S",
+      "max_tokens": 4096,
+      "elapsed_sec": 305.4,
+      "est_cost_usd": 0.1968,
+      "metrics": {
+        "gsm8k": {
+          "n": 300,
+          "accuracy": 13.67,
+          "correct": 41,
+          "truncation_pct": 100.0,
+          "loop_pct": 98.67,
+          "closed_think_pct": 0.0,
+          "avg_tokens": 4096.0
+        },
+        "math500": {
+          "n": 200,
+          "accuracy": 4.0,
+          "correct": 8,
+          "truncation_pct": 100.0,
+          "loop_pct": 95.5,
+          "closed_think_pct": 0.0,
+          "avg_tokens": 4096.0
+        }
+      }
+    },
+    {
+      "status": "ok",
+      "error": null,
+      "size": "0.8B",
+      "side": "wsp",
+      "quant": "bnb_4bit",
+      "model_id": "ashishshroti14/Qwen3.5-0.8B-WSP",
+      "gpu": "L40S",
+      "max_tokens": 4096,
+      "elapsed_sec": 259.4,
+      "est_cost_usd": 0.1672,
+      "metrics": {
+        "gsm8k": {
+          "n": 300,
+          "accuracy": 39.0,
+          "correct": 117,
+          "truncation_pct": 46.0,
+          "loop_pct": 73.33,
+          "closed_think_pct": 100.0,
+          "avg_tokens": 3128.6
+        },
+        "math500": {
+          "n": 200,
+          "accuracy": 27.0,
+          "correct": 54,
+          "truncation_pct": 70.0,
+          "loop_pct": 85.5,
+          "closed_think_pct": 99.5,
+          "avg_tokens": 3579.0
+        }
+      }
+    },
+    {
+      "status": "ok",
+      "error": null,
+      "size": "0.8B",
+      "side": "base",
+      "quant": "w4a16_rtn",
+      "model_id": "Qwen/Qwen3.5-0.8B",
+      "gpu": "L40S",
+      "max_tokens": 4096,
+      "elapsed_sec": 307.2,
+      "est_cost_usd": 0.198,
+      "metrics": {
+        "gsm8k": {
+          "n": 300,
+          "accuracy": 4.67,
+          "correct": 14,
+          "truncation_pct": 100.0,
+          "loop_pct": 99.33,
+          "closed_think_pct": 0.0,
+          "avg_tokens": 4096.0
+        },
+        "math500": {
+          "n": 200,
+          "accuracy": 5.0,
+          "correct": 10,
+          "truncation_pct": 98.5,
+          "loop_pct": 97.5,
+          "closed_think_pct": 1.5,
+          "avg_tokens": 4044.2
+        }
+      }
+    },
+    {
+      "status": "ok",
+      "error": null,
+      "size": "0.8B",
+      "side": "wsp",
+      "quant": "w4a16_rtn",
+      "model_id": "ashishshroti14/Qwen3.5-0.8B-WSP",
+      "gpu": "L40S",
+      "max_tokens": 4096,
+      "elapsed_sec": 234.2,
+      "est_cost_usd": 0.1509,
+      "metrics": {
+        "gsm8k": {
+          "n": 300,
+          "accuracy": 32.67,
+          "correct": 98,
+          "truncation_pct": 48.0,
+          "loop_pct": 82.67,
+          "closed_think_pct": 99.67,
+          "avg_tokens": 2604.8
+        },
+        "math500": {
+          "n": 200,
+          "accuracy": 18.5,
+          "correct": 37,
+          "truncation_pct": 76.0,
+          "loop_pct": 89.0,
+          "closed_think_pct": 99.5,
+          "avg_tokens": 3408.3
+        }
+      }
+    },
+    {
+      "status": "ok",
+      "error": null,
+      "size": "4B",
+      "side": "base",
+      "quant": "bf16",
+      "model_id": "Qwen/Qwen3.5-4B",
+      "gpu": "L40S",
+      "max_tokens": 4096,
+      "elapsed_sec": 764.6,
+      "est_cost_usd": 0.4927,
+      "metrics": {
+        "gsm8k": {
+          "n": 300,
+          "accuracy": 63.33,
+          "correct": 190,
+          "truncation_pct": 47.33,
+          "loop_pct": 12.0,
+          "closed_think_pct": 53.0,
+          "avg_tokens": 2725.9
+        },
+        "math500": {
+          "n": 200,
+          "accuracy": 43.0,
+          "correct": 86,
+          "truncation_pct": 77.0,
+          "loop_pct": 12.0,
+          "closed_think_pct": 24.0,
+          "avg_tokens": 3600.0
+        }
+      }
+    },
+    {
+      "status": "ok",
+      "error": null,
+      "size": "4B",
+      "side": "wsp",
+      "quant": "bf16",
+      "model_id": "ashishshroti14/Qwen3.5-4B-WSP",
+      "gpu": "L40S",
+      "max_tokens": 4096,
+      "elapsed_sec": 515.9,
+      "est_cost_usd": 0.3325,
+      "metrics": {
+        "gsm8k": {
+          "n": 300,
+          "accuracy": 74.0,
+          "correct": 222,
+          "truncation_pct": 14.33,
+          "loop_pct": 15.67,
+          "closed_think_pct": 98.67,
+          "avg_tokens": 1137.4
+        },
+        "math500": {
+          "n": 200,
+          "accuracy": 64.5,
+          "correct": 129,
+          "truncation_pct": 29.5,
+          "loop_pct": 18.0,
+          "closed_think_pct": 91.0,
+          "avg_tokens": 2314.2
+        }
+      }
+    },
+    {
+      "status": "ok",
+      "error": null,
+      "size": "4B",
+      "side": "base",
+      "quant": "fp8",
+      "model_id": "Qwen/Qwen3.5-4B",
+      "gpu": "L40S",
+      "max_tokens": 4096,
+      "elapsed_sec": 1016.5,
+      "est_cost_usd": 0.6551,
+      "metrics": {
+        "gsm8k": {
+          "n": 300,
+          "accuracy": 66.0,
+          "correct": 198,
+          "truncation_pct": 48.0,
+          "loop_pct": 11.33,
+          "closed_think_pct": 52.0,
+          "avg_tokens": 2745.2
+        },
+        "math500": {
+          "n": 200,
+          "accuracy": 44.5,
+          "correct": 89,
+          "truncation_pct": 72.0,
+          "loop_pct": 13.0,
+          "closed_think_pct": 29.5,
+          "avg_tokens": 3543.2
+        }
+      }
+    },
+    {
+      "status": "ok",
+      "error": null,
+      "size": "4B",
+      "side": "wsp",
+      "quant": "fp8",
+      "model_id": "ashishshroti14/Qwen3.5-4B-WSP",
+      "gpu": "L40S",
+      "max_tokens": 4096,
+      "elapsed_sec": 545.4,
+      "est_cost_usd": 0.3515,
+      "metrics": {
+        "gsm8k": {
+          "n": 300,
+          "accuracy": 70.33,
+          "correct": 211,
+          "truncation_pct": 16.33,
+          "loop_pct": 16.33,
+          "closed_think_pct": 99.33,
+          "avg_tokens": 1201.4
+        },
+        "math500": {
+          "n": 200,
+          "accuracy": 64.0,
+          "correct": 128,
+          "truncation_pct": 29.0,
+          "loop_pct": 13.0,
+          "closed_think_pct": 87.5,
+          "avg_tokens": 2358.0
+        }
+      }
+    },
+    {
+      "status": "ok",
+      "error": null,
+      "size": "4B",
+      "side": "base",
+      "quant": "bnb_4bit",
+      "model_id": "Qwen/Qwen3.5-4B",
+      "gpu": "L40S",
+      "max_tokens": 4096,
+      "elapsed_sec": 1011.5,
+      "est_cost_usd": 0.6519,
+      "metrics": {
+        "gsm8k": {
+          "n": 300,
+          "accuracy": 66.0,
+          "correct": 198,
+          "truncation_pct": 49.67,
+          "loop_pct": 24.0,
+          "closed_think_pct": 51.0,
+          "avg_tokens": 2787.1
+        },
+        "math500": {
+          "n": 200,
+          "accuracy": 39.5,
+          "correct": 79,
+          "truncation_pct": 74.5,
+          "loop_pct": 20.0,
+          "closed_think_pct": 26.5,
+          "avg_tokens": 3559.1
+        }
+      }
+    },
+    {
+      "status": "ok",
+      "error": null,
+      "size": "4B",
+      "side": "wsp",
+      "quant": "bnb_4bit",
+      "model_id": "ashishshroti14/Qwen3.5-4B-WSP",
+      "gpu": "L40S",
+      "max_tokens": 4096,
+      "elapsed_sec": 618.2,
+      "est_cost_usd": 0.3984,
+      "metrics": {
+        "gsm8k": {
+          "n": 300,
+          "accuracy": 65.67,
+          "correct": 197,
+          "truncation_pct": 27.67,
+          "loop_pct": 28.0,
+          "closed_think_pct": 98.67,
+          "avg_tokens": 1588.0
+        },
+        "math500": {
+          "n": 200,
+          "accuracy": 58.5,
+          "correct": 117,
+          "truncation_pct": 43.0,
+          "loop_pct": 29.5,
+          "closed_think_pct": 86.5,
+          "avg_tokens": 2598.5
+        }
+      }
+    },
+    {
+      "status": "ok",
+      "error": null,
+      "size": "4B",
+      "side": "base",
+      "quant": "w4a16_rtn",
+      "model_id": "Qwen/Qwen3.5-4B",
+      "gpu": "L40S",
+      "max_tokens": 4096,
+      "elapsed_sec": 577.1,
+      "est_cost_usd": 0.3719,
+      "metrics": {
+        "gsm8k": {
+          "n": 300,
+          "accuracy": 63.0,
+          "correct": 189,
+          "truncation_pct": 48.67,
+          "loop_pct": 22.0,
+          "closed_think_pct": 52.67,
+          "avg_tokens": 2681.7
+        },
+        "math500": {
+          "n": 200,
+          "accuracy": 34.0,
+          "correct": 68,
+          "truncation_pct": 78.0,
+          "loop_pct": 24.0,
+          "closed_think_pct": 23.0,
+          "avg_tokens": 3619.6
+        }
+      }
+    },
+    {
+      "status": "ok",
+      "error": null,
+      "size": "4B",
+      "side": "wsp",
+      "quant": "w4a16_rtn",
+      "model_id": "ashishshroti14/Qwen3.5-4B-WSP",
+      "gpu": "L40S",
+      "max_tokens": 4096,
+      "elapsed_sec": 1248.2,
+      "est_cost_usd": 0.8044,
+      "metrics": {
+        "gsm8k": {
+          "n": 300,
+          "accuracy": 50.33,
+          "correct": 151,
+          "truncation_pct": 50.0,
+          "loop_pct": 47.33,
+          "closed_think_pct": 98.0,
+          "avg_tokens": 2318.3
+        },
+        "math500": {
+          "n": 200,
+          "accuracy": 46.0,
+          "correct": 92,
+          "truncation_pct": 58.5,
+          "loop_pct": 41.0,
+          "closed_think_pct": 85.5,
+          "avg_tokens": 3050.7
+        }
+      }
+    }
+  ]
+}
